@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "brock-bot"
+version = "0.1.0"
+description = ""
+authors = ["mc_fdc <Masato.04.11.2007@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "brock_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+"discord.py" = "^2.2.2"
+aiohttp = "^3.8.4"
+beautifulsoup4 = "^4.12.0"
+lxml = "^4.9.2"
+jishaku = "^2.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
