@@ -22,7 +22,8 @@ class News(commands.Cog):
                 title=news_item["title"],
                 timestamp=datetime.strptime(
                     news_item["date"], "%Y.%m.%d"
-                )
+                ),
+                description=self.news.URL
             ))
         await interaction.followup.send(
             embed=embeds[0], view=page.Page(embeds)
