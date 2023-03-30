@@ -23,7 +23,8 @@ class News(commands.Cog):
                 timestamp=datetime.strptime(
                     news_item["date"], "%Y.%m.%d"
                 ),
-                description=self.news.URL
+                description=self.news.URL,
+                colour=discord.Colour.random()
             ))
         await interaction.followup.send(
             embed=embeds[0], view=page.Page(embeds)
